@@ -6,7 +6,7 @@
 	<!-----------------------------JQUERY AREA----------------------->
 	<!--CDN Content Delivery Network-->
 	 <!--Load the jquery minified version: no comments, no whitespace, streamed-->
-    <script src="jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <!--<script src="scripts/jquery.min.js"></script>-->
     <!--Get Locally from our Server-->
     <!--<script src="scripts/jquery.js"></script>-->
@@ -25,9 +25,9 @@
     <!--Meta tags can provide search engines with information about the site-->
     <!--Metadata is always passed as name/value pairs.-->
     <meta charset="utf-8" />
-    <meta name="description" content="Pizza Shop">
-    <meta name="keywords" content="Pizza, ">
-    <meta name="author" content="Joe Oakes">
+    <meta name="description" content="IST Forum">
+    <meta name="keywords" content="Penn, State, Abington, IST, 420">
+    <meta name="author" content="Row 2">
 	
 	<!-----------------------------CSS STYLE RULES AREA------------------>
     <!--This is an external style sheet reference-->
@@ -92,11 +92,11 @@
 	    <!-- float allows elements to float next to each other right, left, none or inherit-->
 		<!-- You can clear the float left, right, both, none, inherit (from parent element)-->
      	<div style="float:left;width:80px;height:80px" >
-			<img src="Cheese_and_Pepperoni_Pizza_(4825046245).jpg" alt="pizza logo" width="80px" height="80px">
+			<img src="psulogo1.jpg" alt="pizza logo" width="100px" height="80px">
 		</div>
 		<!-- You can text-align: left, right, center, justify, initial (default value), inherit (from parent element)-->
 		<div style="background-color:red; text-align: center; font-size: 200%;">
-			Joe's Pizza Shop
+			IST420 Forum
 		</div>
 	<!-----------------------------NAVIGATION DIV----------------------->
 	
@@ -113,46 +113,41 @@
 </header>
         <!-----------------------------HOME AREA----------------------------->
         <div id="home" style="display:block">
-            <h1>Home Page Section</h1>
-            <aside id="whoisonline" style="line-height:30px;background-color:#eeeeee;height:300px;width:100px;float:left;padding:5px;"> </aside>
-            <section>distinct title and region</section>
+            <h1>Home</h1>
+            <aside id="whoisonline1" style="line-height:30px;background-color:#eeeeee;height:500px;width:150px;float:left;padding:5px;">Online Users </aside>
+            <section>IST420 Row 2 Forum</section>
             <!--<article>self-contained composition (syndication) in a doc</article>-->
             <img id="cocacola" />
         </div>
-        <!-----------------------------MENU AREA----------------------------->
-        <div id="menu" style="display:none">
-            <h1>Menu Page Section</h1>
-            <aside>sidebar</aside>
-            <section>distinct title and region</section>
-            <article>self-contained composition (syndication) in a doc</article>
+        <!-----------------------------FORUM AREA----------------------------->
+        <div id="forum" style="display:none">
+            <h1>Forums</h1>
+            <aside id="whoisonline2" style="line-height:30px;background-color:#eeeeee;height:500px;width:150px;float:left;padding:5px;">Online Users </aside>
+            <section>Help Forums</section>
+            <!--<article>self-contained composition (syndication) in a doc</article>-->
         </div>
-        <!-----------------------------ABOUT AREA---------------------------->
+        <!-----------------------------REGISTER AREA---------------------------->
+        <div id="register" style="display:none">
+            <h1>Register</h1>
+            <aside id="whoisonline3" style="line-height:30px;background-color:#eeeeee;height:500px;width:150px;float:left;padding:5px;">Online Users </aside>
+            <section>Webform Containing Fields that can be passed to a database.</section>
+            <!--<article>self-contained composition (syndication) in a doc</article>-->
+        </div>
+        <!-----------------------------ABOUT AREA----------------------------->
         <div id="about" style="display:none">
-            <h1>About Page Section</h1>
-            <aside>sidebar</aside>
-            <section>distinct title and region</section>
-            <article>self-contained composition (syndication) in a doc</article>
-        </div>
-        <!-----------------------------TERMS AREA----------------------------->
-        <div id="terms" style="display:none">
-            <h1>Terms Page Section</h1>
-        </div>
-        <!-----------------------------SITE AREA----------------------------->
-        <div id="site" style="display:none">
-            <h1>Site Map Page Section</h1>
-        </div>
-        <!-----------------------------CONTACT AREA---------------------------->
-        <div id="contact" style="display:none">
-            <h1>Contact Page Section</h1>
+            <h1>About Us</h1>
+            <aside id="whoisonline4" style="line-height:30px;background-color:#eeeeee;height:500px;width:150px;float:left;padding:5px;">Online Users </aside>
+        	<p>We are a small group of 4 dedicated IST students in IST 420.</p>
+        	<p>We came together to make a IST forum as our Single Page Application.</p>
+        	<p>A single page application uses only HTML,CSS, and Javascript to create a website that loads and acts as a dekstop application.</p>
+        	<p>I hope you enjoy and have found good use for these forums.</p>        
         </div>
         <!-----------------------------FOOTER AREA---------------------------->
         <footer>
             <div>
                 <ul>
-                    <li>White Rabbit Studios&copy; 2015</li>
-                    <li><a href="#terms" id="ftrTerms">Terms of Use</a></li>
-                    <li><a href="#site" id="ftrSite">Site Map</a></li>
-                    <li><a href="#contact" id="ftrContact">Contact Us</a></li>
+                	<!--Shows who made the website-->
+                    <li>IST420 Row 2&copy; 2015</li>
                 </ul>
             </div>
         </footer>
@@ -163,58 +158,52 @@
                 //When home link is clicked show home area
                 $("#navHome").click(function (event) {
                     $("#home").show();
-                    $("#menu, #about, #terms, #site, #contact").hide();
+                    $("#forum, #register,#about").hide();
                 });
                 //When menu link is clicked show menu area
-                $("#navMenu").click(function (event) {
-                    $("#menu").show();
-                    $("#home, #about, #terms, #site, #contact").hide();
+                $("#navForum").click(function (event) {
+                    $("#forum").show();
+                    $("#home, #register,#about").hide();
                 });
                 //When about link is clicked show about area
-                $("#navAbout").click(function (event) {
-                    $("#about").show();
-                    $("#home, #menu, #terms, #site, #contact").hide();
+                $("#navRegister").click(function (event) {
+                    $("#register").show();
+                    $("#forum, #home,#about").hide();
                 });
                 //When terms link is clicked show terms area
-                $("#ftrTerms").click(function (event) {
-                    $("#terms").show();
-                    $("#home, #menu, #about, #site, #contact").hide();
+                $("#navAbout").click(function (event) {
+                    $("#about").show();
+                    $("#forum, #register,#home").hide();
                 });
-                //When site link is clicked show site area
-                $("#ftrSite").click(function (event) {
-                    $("#site").show();
-                    $("#home, #menu, #about, #terms, #contact").hide();
-                });
-                //When contact link is clicked show contact area
-                $("#ftrContact").click(function (event) {
-                    $("#contact").show();
-                    $("#home, #menu, #about, #terms, #site").hide();
-                });
-                //Get JSON data from Facebook
-                $.getJSON("https://graph.facebook.com/cocacola")
-                    .done(function (json) {
-                       $("#cocacola").attr("src", json.cover.source);
-                    })
-                    .fail(function() {
-                       alert("Error connecting to facebook")
-                    });
-                //Load the Menu Area with the JSON data
+                //Load the Online Users with the JSON data
                 for (var i in users){
-                    $("#whoisonline").append("<br>"
+                	//Adds Online Users to Sidebar in Home
+                    $("#whoisonline1").append("<br>"
                         + "ID: " + users[i].userID
                         + "<br>"
                         + "UserName: " + users[i].userName
                         + "<br>");
+                    //Adds Online Users to Sidebar in Forum
+                    $("#whoisonline2").append("<br>"
+                        + "ID: " + users[i].userID
+                        + "<br>"
+                        + "UserName: " + users[i].userName
+                        + "<br>");
+                    //Adds Online Users to Sidebar in Register
+					$("#whoisonline3").append("<br>"
+                        + "ID: " + users[i].userID
+                        + "<br>"
+                        + "UserName: " + users[i].userName
+                        + "<br>");
+                    //Adds Online Users to Sidebar in About
+					$("#whoisonline4").append("<br>"
+                        + "ID: " + users[i].userID
+                        + "<br>"
+                        + "UserName: " + users[i].userName
+                        + "<br>");
+
                  }
-                //Get JSON data from Data
-                //$.getJSON("Data/menu.json")
-                //   .done(function (json) {
-                //       //$("#menu").html("<div>" + json.menu[0].pizzaType + "</div>");
-                //   })
-                //   .fail(function () {
-                //       alert("Error connecting to menu.json")
-                //   });
-            });
+             	});
         </script>
  
 </body>
