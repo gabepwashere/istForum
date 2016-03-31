@@ -41,15 +41,11 @@
 		nav {
 		width: 100%; /*Uses 100% width of the screen*/
 		height: 40px;
-		font-size: 16px;
-		/*Families: Serif Fonts, Sans-Serif Fonts, Monospace Fonts*/
-		/*font-family: "Times New Roman", Times, serif;*/
-		font-family: Tahoma, Geneva, sans-serif;  /*No barbs*/
+		font-size: x-large;
+		font-family:  Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 		font-weight: bold;
 		text-align: center;
-		text-shadow: 3px 2px 3px #333333; /*CSS3 feature*/
 		background-color: #6ec8ea;   /*changed the color to blue, just like our school's main color */
-		border-radius: 8px; /*CSS3 feature rounded edges*/
 		}
 		/*Unordered list in the nav area*/
 		nav ul {
@@ -72,8 +68,7 @@
 		}
 		/*Anchor in the nav area when the Mouse Hovers over the area*/
 		nav a:hover {
-			color: #4cff00; /*Lime green*/
-			background-color: #FFF;
+			color: white; /*changes color to white when hovered on*/
 		}
 		footer li {
 			display: inline; /*position text horizontally*/
@@ -81,6 +76,7 @@
 		}
 		footer a {
 			text-decoration: none; /*removes underline*/
+		}
 		}
 	
     </style>
@@ -98,12 +94,12 @@
 			text-align: center; 
 			font-size: 200%;
 			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-			color: #1C497B;"> 
+			color: #0000FF;"> 
 			IST420 Forum
 		</div>
 	<!-----------------------------NAVIGATION DIV----------------------->
 	
-	<nav>
+	<nav class="Page-Selector">
 		<div>
 	         <ul>
 	            <li><a href="#home" id="navHome" class="links" rel="home">Home</a></li>
@@ -117,13 +113,21 @@
         <!-----------------------------HOME AREA----------------------------->
         <div id="home" style="display:block">
             <h1>Home</h1>
-            <aside id="whoisonline1" style="line-height:30px;background-color:#eeeeee;height:500px;width:150px;float:left;padding:5px;">Online Users </aside>
+            <aside id="whoisonline1" 
+            style=
+           		"line-height:30px;
+           		background-color:#eeeeee;
+            	height:500px;
+           		width:150px;
+            	float:left;
+            	padding:5px;">Online Users </aside>
             <section>IST420 Row 2 Forum</section>
             <!--<article>self-contained composition (syndication) in a doc</article>-->
             <img id="cocacola" />
         </div>
         <!-----------------------------FORUM AREA----------------------------->
-        <div id="forum" style="display:none">
+        <div id="forum" 
+        style="display:none">
             <h1>Forums</h1>
             <aside id="whoisonline2" style="line-height:30px;background-color:#eeeeee;height:500px;width:150px;float:left;padding:5px;">Online Users </aside>
             <section>Help Forums</section>
@@ -204,12 +208,9 @@
                         + "<br>"
                         + "UserName: " + users[i].userName
                         + "<br>");
-
                  }
              	});
         </script>
  
 </body>
 </html>
- 
- 
