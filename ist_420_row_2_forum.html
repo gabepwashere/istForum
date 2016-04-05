@@ -18,7 +18,7 @@ Row 2:
 	<!-----------------------------JQUERY AREA----------------------->
 	<!--CDN Content Delivery Network-->
 	 <!--Load the jquery minified version: no comments, no whitespace, streamed-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
     <!--<script src="scripts/jquery.min.js"></script>-->
     <!--Get Locally from our Server-->
     <!--<script src="scripts/jquery.js"></script>-->
@@ -49,7 +49,7 @@ Row 2:
             /*text-align: center;*/
         }
 		nav {
-		width: 100%; /*Uses 100% width of the screen*/
+		width: 1024px; /*Limits the page size to 1024px width*/
 		height: 40px;
 		font-size: x-large;
 		font-family:  Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -94,7 +94,7 @@ Row 2:
 	
     </style>
 </head>
-<body>
+<body style="margin-left: 240px">
      <!-----------------------------HEADER AREA----------------------->
     <header>
     
@@ -103,7 +103,9 @@ Row 2:
 			<img src="psulogo.jpg" alt="PSU IST Logo" width="100px" height="80px">
 		</div>
 	<!--Header-->	
-		<div style="background-color:#162840;
+		<div style="
+				width: 1024px;
+				background-color:#162840;
 				text-align: center; 
 				font-size: 200%;
 				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
@@ -173,22 +175,42 @@ Row 2:
         <!-----------------------------REGISTER AREA---------------------------->
         <div id="register" style="display:none">
             <h1>Register</h1>
-            <aside id="whoisonline3" style="line-height:30px;background-color:#eeeeee;height:500px;width:150px;float:left;padding:5px;">Online Users </aside>
+            <aside id="whoisonline3" 
+            style="
+            line-height:30px;
+            background-color:#eeeeee;
+            height:500px;
+            width:150px;
+            float:left;
+            padding:5px;
+            ">Online Users </aside>
             <section>Webform Containing Fields that can be passed to a database.</section>
             <!--<article>self-contained composition (syndication) in a doc</article>-->
         </div>
         <!-----------------------------ABOUT AREA----------------------------->
         <div id="about" style="display:none">
             <h1>About Us</h1>
-            <aside id="whoisonline4" style="line-height:30px;background-color:#eeeeee;height:500px;width:150px;float:left;padding:5px;">Online Users </aside>
+            <aside id="whoisonline4" style="
+            line-height:30px;
+            background-color:#eeeeee;
+            height:500px;
+            width:150px;
+            float:left;
+            padding:5px;
+            ">Online Users </aside>
         	<p>We are a small group of 4 dedicated IST students in IST 420.</p>
         	<p>We came together to make a IST forum as our Single Page Application.</p>
         	<p>A single page application uses only HTML,CSS, and Javascript to create a website that loads and acts as a dekstop application.</p>
         	<p>I hope you enjoy and have found good use for these forums.</p>        
         </div>
         <!-----------------------------FOOTER AREA---------------------------->
-        <footer>
-              <div style="position : relative; clear: both; bottom: 0; text-align:center"> <!-- Aligning the footer to the bottom of the page and at center-->
+        <footer><!-- Aligning the footer to the bottom of the page and at center-->
+              <div style="
+              position : relative;
+              clear: both;
+              bottom: 0;
+              text-align:center
+              "> 
                 <ul>
                 	<!--Shows who made the website-->
                     <li>IST420 Row 2&copy; 2015</li>
