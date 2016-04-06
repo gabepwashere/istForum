@@ -18,7 +18,7 @@ Row 2:
 	<!-----------------------------JQUERY AREA----------------------->
 	<!--CDN Content Delivery Network-->
 	 <!--Load the jquery minified version: no comments, no whitespace, streamed-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
     <!--<script src="scripts/jquery.min.js"></script>-->
     <!--Get Locally from our Server-->
     <!--<script src="scripts/jquery.js"></script>-->
@@ -254,8 +254,9 @@ Row 2:
         </div>
         <!-----------------------------FOOTER AREA---------------------------->
         <footer><!-- Aligning the footer to the bottom of the page and at center-->
+              <!--Forced the footer to follow the rest of the page's width, allowing it to center correctly.-->
               <div style="
-              width: 1024px; 	<!--Forced the footer to follow the rest of the page's width, allowing it to center correctly.-->
+              width: 1024px; 	
               position: relative;
               clear: both;
               bottom: 0;
@@ -266,8 +267,7 @@ Row 2:
                     <li>IST420 Row 2&copy; 2015</li>
                 </ul>
             </div>
-        </footer>
-        <!-----------------------------JAVASCRIPT AREA----------------------->
+        </footer>        <!-----------------------------JAVASCRIPT AREA----------------------->
         <script>
             //When the DOM document is loaded in the browser
             $(document).ready(function () {
