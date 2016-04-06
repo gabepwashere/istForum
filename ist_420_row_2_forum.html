@@ -18,7 +18,7 @@ Row 2:
 	<!-----------------------------JQUERY AREA----------------------->
 	<!--CDN Content Delivery Network-->
 	 <!--Load the jquery minified version: no comments, no whitespace, streamed-->
-    <script src="jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!--<script src="scripts/jquery.min.js"></script>-->
     <!--Get Locally from our Server-->
     <!--<script src="scripts/jquery.js"></script>-->
@@ -88,13 +88,9 @@ Row 2:
 		}
 		}
 	
-    .auto-style1 {
-		margin-left: 165px;
-	}
-	
     </style>
 </head>
-<body style="margin-left: 240px">
+<body>
      <!-----------------------------HEADER AREA----------------------->
     <header>
     
@@ -136,16 +132,30 @@ Row 2:
            		width:150px;
             	float:left;
             	padding:5px;"> Online Users </aside>
-            <section class="auto-style1">IST420 Row 2 Forum</section>
+            <section class="margin-left:165px">IST420 Row 2 Forum</section>
             <!--<article>self-contained composition (syndication) in a doc</article>-->
-            <div id="lastactivity">
-            	<div style="float:left;">Zoom</div>
+            <div id="lastactivity"
+            style="
+            	border-style: solid; 
+            	border-color:black; 
+            	padding: 10px 10px 10px 10px; 
+            	margin-left: 165px; 
+            	width: 835px;">
+            <div style="float:left; font-size:large;">General Discussion</div>
+            	<p>
             	<br>
-				<div style="float:left;">Web Expression</div>
+            	Last Post in General Discussion</p>
+            	<br>
+				<div style="float:left; font-size:large;">Coding</div>
+				<p>
+            	<br>
+            	Last Post in Coding</p>
 				<br>
-				<div style="float:left;">Github</div>
-				<br>
-				<div style="float:left;">Kinect</div>
+				<div style="float:left;font-size:large;">Networking</div>
+				<p>
+            	<br>
+            	Last Post in Networking</p>
+
             </div>
         </div>
         <!-----------------------------FORUM AREA----------------------------->
@@ -161,15 +171,54 @@ Row 2:
             	padding:5px;">
             Online Users </aside>
             <section>IST Forums</section>
-            <div id="istforums">
-            	<div style="float:left;">Coding</div>
+            <div id="istforums" 
+            	style="
+            	border-style: solid; 
+            	border-color:black; 
+            	padding: 10px 10px 10px 10px; 
+            	margin-left: 165px; 
+            	width: 835px;
+            ">
+            	<div style="float:left; font-size: large;">General Discussion</div>
             	<br>
-				<div style="float:left;">Website Design</div>
+            	<p>
+            	Post1
+            	</p>
+            	<p>
+            	Post2
+            	</p>
+            	<p>
+            	Post3
+            	</p>
+            	<br>
+				<div style="float:left; font-size: large;">Coding</div>
+				<br>	
+				<p>
+            	Post1
+            	</p>
+            	<p>
+            	Post2
+            	</p>
+            	<p>
+            	Post3
+            	</p>
+            	<br>
+				<div style="float:left; font-size: large;">Networking</div>
 				<br>
-				<div style="float:left;">Projects</div>
-				<br>
-				<div style="float:left;">Research Papers</div>
+				<p>
+            	Post1
+            	</p>
+            	<p>
+            	Post2
+            	</p>
+            	<p>
+            	Post3
+            	</p>
+
             </div>
+        <!-----------------------------General Discussion Area----------------------------->
+        <!-----------------------------Coding Area----------------------------------------->
+        <!-----------------------------Networking Area------------------------------------->
             <!--<article>self-contained composition (syndication) in a doc</article>-->
         </div>
         <!-----------------------------REGISTER AREA---------------------------->
@@ -206,7 +255,8 @@ Row 2:
         <!-----------------------------FOOTER AREA---------------------------->
         <footer><!-- Aligning the footer to the bottom of the page and at center-->
               <div style="
-              position : relative;
+              width: 1024px; 	<!--Forced the footer to follow the rest of the page's width, allowing it to center correctly.-->
+              position: relative;
               clear: both;
               bottom: 0;
               text-align:center
