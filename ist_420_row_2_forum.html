@@ -259,6 +259,48 @@ Row 2:
             </div>
 
         <!-----------------------------Networking Area------------------------------------->
+        <div id="networkingArea" 
+        style="display:none">
+            <h1>Networking</h1>
+            <aside id="whoisonline2" 
+            	style="line-height:30px;
+            	background-color:#eeeeee;
+            	height:500px;
+            	width:150px;
+            	float:left;
+            	padding:5px;">
+            Online Users </aside>
+            <section>IST Forums</section>
+            <div id="networking" 
+            	style="
+            	border-style: solid; 
+            	border-color:black; 
+            	padding: 10px 10px 10px 10px; 
+            	margin-left: 165px; 
+            	width: 835px;
+            ">
+            	<div style="float:left; font-size: large;"></div>
+            	<br>
+            	<p>
+            	Post1
+            	</p>
+            	<p>
+            	Post2
+            	</p>
+            	<p>
+            	Post3
+            	</p>
+            	<p>
+            	Post4
+            	</p>
+            	<p>
+            	Post5
+            	</p>
+            	<br>
+
+            </div>
+
+
             <!--<article>self-contained composition (syndication) in a doc</article>-->
         </div>
         <!-----------------------------REGISTER AREA---------------------------->
@@ -348,6 +390,12 @@ Row 2:
                     $("#CodingArea").show();
                     $("#forum, #register,#home").hide();
                 });
+                //When Networking Area link is clicked show networking area
+                $("#networkingArea").click(function (event) {
+                    $("#networking").show();
+                    $("#forum, #register,#home,#about").hide();
+                });
+
 
                 //Load the Online Users with the JSON data
                 for (var i in users){
