@@ -203,7 +203,7 @@ Row 2:
             	Post3
             	</p>
             	<br>
-				<div style="float:left; font-size: large;">Networking</div>
+				<p><a href="#NetworkingArea" id="Networking" class="links" rel="networking">Networking</a></p>
 				<br>
 				<p>
             	Post1
@@ -259,7 +259,7 @@ Row 2:
             </div>
 
         <!-----------------------------Networking Area------------------------------------->
-        <div id="networkingArea" 
+        <div id="NetworkingArea" 
         style="display:none">
             <h1>Networking</h1>
             <aside id="whoisonline2" 
@@ -271,7 +271,7 @@ Row 2:
             	padding:5px;">
             Online Users </aside>
             <section>IST Forums</section>
-            <div id="networking" 
+            <div id="Networking" 
             	style="
             	border-style: solid; 
             	border-color:black; 
@@ -361,7 +361,35 @@ Row 2:
                     <li>IST420 Row 2&copy; 2015</li>
                 </ul>
             </div>
-        </footer>        <!-----------------------------JAVASCRIPT AREA----------------------->
+        </footer>        
+        <!-----------------------------EXAMPLE POST AREA---------------------------->
+        <div id="post" style="display:block">
+            <h1>Post</h1>
+            <aside id="whoisonline1" 
+            style=
+           		"line-height:30px;
+           		background-color:#eeeeee;
+            	height:500px;
+           		width:150px;
+            	float:left;
+            	padding:5px;"> Online Users </aside>
+            <section class="margin-left:165px">IST420 Row 2 Forum</section>
+            <!--<article>self-contained composition (syndication) in a doc</article>-->
+            <div id="lastactivity"
+            style="
+            	border-style: solid; 
+            	border-color:black; 
+            	padding: 10px 10px 10px 10px; 
+            	margin-left: 165px; 
+            	width: 835px;">
+            <div style="float:left; font-size:large;">General Discussion</div>
+            	
+
+            </div>
+        </div>
+
+        
+        <!-----------------------------JAVASCRIPT AREA----------------------->
         <script>
             //When the DOM document is loaded in the browser
             $(document).ready(function () {
@@ -391,9 +419,9 @@ Row 2:
                     $("#forum, #register,#home").hide();
                 });
                 //When Networking Area link is clicked show networking area
-                $("#networkingArea").click(function (event) {
-                    $("#networking").show();
-                    $("#forum, #register,#home,#about").hide();
+                $("#Networking").click(function (event) {
+                    $("#NetworkingArea").show();
+                    $("#forum, #register,#home,#about,#CodingArea").hide();
                 });
 
 
