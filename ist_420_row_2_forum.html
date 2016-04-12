@@ -191,7 +191,7 @@ Row 2:
             	Post3
             	</p>
             	<br>
-				<div style="float:left; font-size: large;">Coding</div>
+				<p><a href="#CodingArea" id="CodingArea" class="links" rel="codingarea">Coding Area</a></p>
 				<br>	
 				<p>
             	Post1
@@ -218,6 +218,46 @@ Row 2:
             </div>
         <!-----------------------------General Discussion Area----------------------------->
         <!-----------------------------Coding Area----------------------------------------->
+         <div id="CodingArea" 
+        style="display:none">
+            <h1>Coding Area</h1>
+            <aside id="whoisonline2" 
+            	style="line-height:30px;
+            	background-color:#eeeeee;
+            	height:500px;
+            	width:150px;
+            	float:left;
+            	padding:5px;">
+            Online Users </aside>
+            <section>IST Forums</section>
+            <div id="istforums" 
+            	style="
+            	border-style: solid; 
+            	border-color:black; 
+            	padding: 10px 10px 10px 10px; 
+            	margin-left: 165px; 
+            	width: 835px;
+            ">
+            	<div style="float:left; font-size: large;">Coding Area</div>
+            	<br>
+            	<p>
+            	Post1
+            	</p>
+            	<p>
+            	Post2
+            	</p>
+            	<p>
+            	Post3
+            	</p>
+            	<p>
+            	Post4
+            	</p>
+            	<p>
+            	Post5
+            	</p>
+            	<br>	
+            </div>
+
         <!-----------------------------Networking Area------------------------------------->
             <!--<article>self-contained composition (syndication) in a doc</article>-->
         </div>
@@ -303,6 +343,12 @@ Row 2:
                     $("#about").show();
                     $("#forum, #register,#home").hide();
                 });
+                 //When coding area link is clicked show coding area
+                $("#CodingArea").click(function (event) {
+                    $("#CodingArea").show();
+                    $("#forum, #register,#home").hide();
+                });
+
                 //Load the Online Users with the JSON data
                 for (var i in users){
                 	//Adds Online Users to Sidebar in Home
