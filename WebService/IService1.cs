@@ -23,25 +23,37 @@ namespace WebService
         // TODO: Add your service operations here
 
         [OperationContract]
-        //Added for handling REST get one Pass Item ID in the Query String
+        //Added for handling REST get one user by user ID
         [WebGet(ResponseFormat = WebMessageFormat.Json,
                    UriTemplate = "/GetUserByUserID?userID={userID}")]
         User GetUserByUserID(int userID);
 
         [OperationContract]
-        //Added for handling REST return array of items
+        //Added for handling REST update one user by user ID
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+                   UriTemplate = "/UpdateUserByUserID?userID={userID}&username={username}&password={password}")]
+        Boolean UpdateUserByUserID(int userID,string username,string password);
+
+        [OperationContract]
+        //Added for handling REST delete one user by user ID
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+                   UriTemplate = "/DeleteUserByUserID?userID={userID}")]
+        Boolean DeleteUserByUserID(int userID);
+
+        [OperationContract]
+        //Added for handling REST post an user
         [WebGet(ResponseFormat = WebMessageFormat.Json,
            UriTemplate = "/Register?username={username}&password={password}")]
         Boolean RegisterUser(string username,string password);
 
         [OperationContract]
-        //Added for handling REST return array of items
+        //Added for handling REST return array of users
         [WebGet(ResponseFormat = WebMessageFormat.Json,
            UriTemplate = "/GetAllUsers")]
         User[] GetAllUsers();
 
         [OperationContract]
-        //Added for handling REST get one item
+        //Added for handling REST get one post
         [WebGet(ResponseFormat = WebMessageFormat.Json,
                    UriTemplate = "/GetPostByPostID?postID={postID}")]
         Post GetPostByPostID(int postID);
@@ -51,6 +63,18 @@ namespace WebService
         [WebGet(ResponseFormat = WebMessageFormat.Json,
            UriTemplate = "/CreatePost?username={username}&content={content}&date={date}")]
         Boolean CreatePost(string username, string content, string date);
+
+        [OperationContract]
+        //Added for handling REST update post by PostID
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+                   UriTemplate = "/UpdatePostByPostID?postID={postID}&username={username}&content={content}&date={date}")]
+        Boolean UpdatePostByPostID(int postID, string username, string content,string date);
+
+        [OperationContract]
+        //Added for handling REST delete one post by PostID
+        [WebGet(ResponseFormat = WebMessageFormat.Json,
+                   UriTemplate = "/DeletePostByPostID?postID={postID}")]
+        Boolean DeletePostByPostID(int postID);
 
         [OperationContract]
         //Added for handling REST return array of items

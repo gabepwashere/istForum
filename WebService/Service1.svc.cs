@@ -36,6 +36,47 @@ namespace WebService
             }
         }
 
+        public Boolean DeletePostByPostID(int postID)
+        {
+
+            using (ist420row2Entities Entity = new ist420row2Entities())
+            {
+                Post post = new Post();
+                try
+                {
+                    post = Entity.Posts.Find(postID);
+                    //Delete a record
+                    Entity.Posts.Remove(post);
+                    Entity.SaveChanges();
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+        }
+
+        public Boolean DeleteUserByUserID(int userID)
+        {
+            using (ist420row2Entities Entity = new ist420row2Entities())
+            {
+                User user= new User();
+                try
+                {
+                    user = Entity.Users.Find(userID);
+                    //Delete a record
+                    Entity.Users.Remove(user);
+                    Entity.SaveChanges();
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+        }
+
         public Post[] GetAllPosts()
         {
             using (ist420row2Entities Entity = new ist420row2Entities())
@@ -106,6 +147,47 @@ namespace WebService
                 //Save the changes to the DB
                 Entity.SaveChanges();
                 //user.userID will contain the record number
+                if (user.userID > 0)
+                    return true;
+                else
+                    return false;
+            }
+        }
+
+        public Boolean UpdatePostByPostID(int postID, string username, string content, string date)
+        {
+            using (ist420row2Entities Entity = new ist420row2Entities())
+            {
+                //Update a Record
+                //Create the student stud object
+                Post post = new Post();
+                post= Entity.Posts.Find(postID);
+                post.username = username;
+                post.content= content;
+                post.date = date;
+                //Save the changes to the DB
+                Entity.SaveChanges();
+                //stud.fldStudentID will contain the record number
+                if (post.postID > 0)
+                    return true;
+                else
+                    return false;
+            }
+        }
+
+        public Boolean UpdateUserByUserID(int userID, string username, string password)
+        {
+            using(ist420row2Entities Entity = new ist420row2Entities())
+            {
+                //Update a Record
+                //Create the student stud object
+                User user = new User();
+                user = Entity.Users.Find(userID);
+                user.username = username;
+                user.password = password;
+                //Save the changes to the DB
+                Entity.SaveChanges();
+                //stud.fldStudentID will contain the record number
                 if (user.userID > 0)
                     return true;
                 else
