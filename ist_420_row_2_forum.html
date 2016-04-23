@@ -191,7 +191,7 @@ Row 2:
             	margin-left: 165px; 
             	width: 835px;
             	font-family: Calibri;">
-				<p><a href="#GeneralDiscussionArea" id="GeneralDiscussion" class="links" rel="generaldiscussion">General Discussion</a></p>
+				<p><a href="#GeneralDiscussionArea" id="GeneralDiscussion2" class="links" rel="generaldiscussion">General Discussion</a></p>
             	<br>
             	<p>
             	Post1
@@ -203,7 +203,7 @@ Row 2:
             	Post3
             	</p>
             	<br>
-				<p><a href="#CodingArea" id="Coding" class="links" rel="codingarea">Coding Area</a></p>
+				<p><a href="#CodingArea" id="Coding2" class="links" rel="codingarea">Coding Area</a></p>
 				<br>	
 				<p>
             	Post1
@@ -215,7 +215,7 @@ Row 2:
             	Post3
             	</p>
             	<br>
-				<p><a href="#NetworkingArea" id="Networking" class="links" rel="networking">Networking</a></p>
+				<p><a href="#NetworkingArea" id="Networking2" class="links" rel="networking">Networking</a></p>
 				<br>
 				<p>
             	Post1
@@ -288,7 +288,7 @@ Row 2:
             	padding:5px;
             	font-family: Calibri;">
             Online Users </aside>
-            <div id="Coding" 
+            <div 
             	style="
             	border-style: solid; 
             	border-color:black; 
@@ -328,7 +328,7 @@ Row 2:
             	float:left;
             	padding:5px;">
             Online Users </aside>
-            <div id="Networking" 
+            <div 
             	style="
             	border-style: solid; 
             	border-color:black; 
@@ -491,17 +491,17 @@ Row 2:
                     $("#forum, #register,#home,#NetworkingArea,#CodingArea,#GeneralDiscussionArea").hide();
                 });
                 //When General Discussion Area link is clicked show networking area
-                $("#GeneralDiscussion").click(function (event) {
+                $("#GeneralDiscussion,#GeneralDiscussion2").click(function (event) {
                     $("#GeneralDiscussionArea").show();
                     $("#forum, #register,#home,#about,#CodingArea,#NetworkingArea").hide();
                 });
                  //When coding area link is clicked show coding area
-                $("#Coding").click(function (event) {
+                $("#Coding,#Coding2").click(function (event) {
                     $("#CodingArea").show();
                     $("#forum, #register,#home,#NetworkingArea,#GeneralDiscussionArea").hide();
                 });
                 //When Networking Area link is clicked show networking area
-                $("#Networking").click(function (event) {
+                $("#Networking,#Networking2").click(function (event) {
                     $("#NetworkingArea").show();
                     $("#forum, #register,#home,#about,#CodingArea,#GeneralDiscussionArea").hide();
                 });
