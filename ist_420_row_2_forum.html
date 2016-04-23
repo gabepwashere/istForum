@@ -95,7 +95,11 @@ Row 2:
     <header>
     
     <!--Logo-->
-     	<div style="float:left;width:80px;height:80px" >
+     	<div 
+     	style="
+     	float:left;
+     	width:80px;
+     	height:80px">
 			<img src="psulogo.jpg" alt="PSU IST Logo" width="100px" height="79px">
 		</div>
 	<!--Header-->	
@@ -143,17 +147,23 @@ Row 2:
             	margin-left: 165px; 
             	width: 835px;
             	font-family: Calibri;">
-            <div style="float:left; font-size:large;">General Discussion</div>
+            <div 
+            style="
+            float:left;
+            font-size:large;
+            ">
+				<a href="#GeneralDiscussionArea" id="GeneralDiscussion" class="links" rel="generaldiscussion">General Discussion</a>
+				</div>
             	<p>
             	<br>
             	Last Post in General Discussion</p>
             	<br>
-				<div style="float:left; font-size:large;">Coding</div>
+				<p><a href="#CodingArea" id="Coding" class="links" rel="codingarea">Coding Area</a></p>
 				<p>
             	<br>
             	Last Post in Coding</p>
 				<br>
-				<div style="float:left;font-size:large;">Networking</div>
+				<p><a href="#NetworkingArea" id="Networking" class="links" rel="networking">Networking</a></p>
 				<p>
             	<br>
             	Last Post in Networking</p>
@@ -222,7 +232,7 @@ Row 2:
         <!-----------------------------General Discussion Area----------------------------->
         <div id="GeneralDiscussionArea" 
         style="display:none">
-            <h1>General Discussion</h1>
+            <h1>General Discussion Sub-Forum</h1>
             <aside id="whoisonline2" 
             	style="line-height:30px;
             	background-color:#eeeeee;
@@ -232,7 +242,6 @@ Row 2:
             	padding:5px;
             	font-family: Calibri;">
             Online Users </aside>
-            <section>General Discussion</section>
             <div id="GeneralDiscussion" 
             	style="
             	border-style: solid; 
@@ -269,7 +278,7 @@ Row 2:
         <!-----------------------------Coding Area----------------------------------------->
         <div id="CodingArea" 
         style="display:none">
-            <h1>Coding Area</h1>
+            <h1>Coding Sub-Forum</h1>
             <aside id="whoisonline2" 
             	style="line-height:30px;
             	background-color:#eeeeee;
@@ -279,7 +288,6 @@ Row 2:
             	padding:5px;
             	font-family: Calibri;">
             Online Users </aside>
-            <section>Coding Sub-Forum</section>
             <div id="Coding" 
             	style="
             	border-style: solid; 
@@ -311,7 +319,7 @@ Row 2:
         <!-----------------------------Networking Area------------------------------------->
         <div id="NetworkingArea" 
         style="display:none">
-            <h1>Networking</h1>
+            <h1>Networking Sub-Forum</h1>
             <aside id="whoisonline2" 
             	style="line-height:30px;
             	background-color:#eeeeee;
@@ -320,7 +328,6 @@ Row 2:
             	float:left;
             	padding:5px;">
             Online Users </aside>
-            <section>Networking</section>
             <div id="Networking" 
             	style="
             	border-style: solid; 
@@ -476,7 +483,7 @@ Row 2:
                 //When about link is clicked show about area
                 $("#navRegister").click(function (event) {
                     $("#register").show();
-                    $("#forum, #home,#about,#Coding,#CodingArea,#GeneralDiscussionArea").hide();
+                    $("#forum, #home,#about,#Coding,#GeneralDiscussionArea").hide();
                 });
                 //When terms link is clicked show terms area
                 $("#navAbout").click(function (event) {
