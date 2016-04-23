@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ist420row2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Posts">
+          <Key>
+            <PropertyRef Name="postID" />
+          </Key>
+          <Property Name="postID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="content" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="date" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblMenuItemsDave">
+          <Key>
+            <PropertyRef Name="fldPizzaID" />
+          </Key>
+          <Property Name="fldPizzaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fldPizzaType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="fldPizzaCost" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblMenuItemsGABRIEL">
+          <Key>
+            <PropertyRef Name="fldPizzaID" />
+          </Key>
+          <Property Name="fldPizzaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fldPizzaType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="fldPizzaCost" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblMenuItemsJoey">
+          <Key>
+            <PropertyRef Name="fldPizzaID" />
+          </Key>
+          <Property Name="fldPizzaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fldPizzaType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="fldPizzaCost" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblMenuItemsTim">
+          <Key>
+            <PropertyRef Name="fldPizzaID" />
+          </Key>
+          <Property Name="fldPizzaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fldPizzaType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="fldPizzaCost" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="userName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ist420row2ModelStoreContainer">
+          <EntitySet Name="Posts" EntityType="Self.Posts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMenuItemsDave" EntityType="Self.tblMenuItemsDave" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMenuItemsGABRIEL" EntityType="Self.tblMenuItemsGABRIEL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMenuItemsJoey" EntityType="Self.tblMenuItemsJoey" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMenuItemsTim" EntityType="Self.tblMenuItemsTim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ist420row2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Post">
+          <Key>
+            <PropertyRef Name="postID" />
+          </Key>
+          <Property Name="postID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="content" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="date" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblMenuItemsDave">
+          <Key>
+            <PropertyRef Name="fldPizzaID" />
+          </Key>
+          <Property Name="fldPizzaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fldPizzaType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fldPizzaCost" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblMenuItemsGABRIEL">
+          <Key>
+            <PropertyRef Name="fldPizzaID" />
+          </Key>
+          <Property Name="fldPizzaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fldPizzaType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fldPizzaCost" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblMenuItemsJoey">
+          <Key>
+            <PropertyRef Name="fldPizzaID" />
+          </Key>
+          <Property Name="fldPizzaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fldPizzaType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fldPizzaCost" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblMenuItemsTim">
+          <Key>
+            <PropertyRef Name="fldPizzaID" />
+          </Key>
+          <Property Name="fldPizzaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fldPizzaType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fldPizzaCost" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ist420row2Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Posts" EntityType="Self.Post" />
+          <EntitySet Name="tblMenuItemsDaves" EntityType="Self.tblMenuItemsDave" />
+          <EntitySet Name="tblMenuItemsGABRIELs" EntityType="Self.tblMenuItemsGABRIEL" />
+          <EntitySet Name="tblMenuItemsJoeys" EntityType="Self.tblMenuItemsJoey" />
+          <EntitySet Name="tblMenuItemsTims" EntityType="Self.tblMenuItemsTim" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ist420row2ModelStoreContainer" CdmEntityContainer="ist420row2Entities">
+          <EntitySetMapping Name="Posts">
+            <EntityTypeMapping TypeName="ist420row2Model.Post">
+              <MappingFragment StoreEntitySet="Posts">
+                <ScalarProperty Name="postID" ColumnName="postID" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="date" ColumnName="date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMenuItemsDaves">
+            <EntityTypeMapping TypeName="ist420row2Model.tblMenuItemsDave">
+              <MappingFragment StoreEntitySet="tblMenuItemsDave">
+                <ScalarProperty Name="fldPizzaID" ColumnName="fldPizzaID" />
+                <ScalarProperty Name="fldPizzaType" ColumnName="fldPizzaType" />
+                <ScalarProperty Name="fldPizzaCost" ColumnName="fldPizzaCost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMenuItemsGABRIELs">
+            <EntityTypeMapping TypeName="ist420row2Model.tblMenuItemsGABRIEL">
+              <MappingFragment StoreEntitySet="tblMenuItemsGABRIEL">
+                <ScalarProperty Name="fldPizzaID" ColumnName="fldPizzaID" />
+                <ScalarProperty Name="fldPizzaType" ColumnName="fldPizzaType" />
+                <ScalarProperty Name="fldPizzaCost" ColumnName="fldPizzaCost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMenuItemsJoeys">
+            <EntityTypeMapping TypeName="ist420row2Model.tblMenuItemsJoey">
+              <MappingFragment StoreEntitySet="tblMenuItemsJoey">
+                <ScalarProperty Name="fldPizzaID" ColumnName="fldPizzaID" />
+                <ScalarProperty Name="fldPizzaType" ColumnName="fldPizzaType" />
+                <ScalarProperty Name="fldPizzaCost" ColumnName="fldPizzaCost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMenuItemsTims">
+            <EntityTypeMapping TypeName="ist420row2Model.tblMenuItemsTim">
+              <MappingFragment StoreEntitySet="tblMenuItemsTim">
+                <ScalarProperty Name="fldPizzaID" ColumnName="fldPizzaID" />
+                <ScalarProperty Name="fldPizzaType" ColumnName="fldPizzaType" />
+                <ScalarProperty Name="fldPizzaCost" ColumnName="fldPizzaCost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="ist420row2Model.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
