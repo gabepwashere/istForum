@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ist420row2ModelStoreContainer" CdmEntityContainer="ist420row2Entities">
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="ist420row2Model.Post">
+        <MappingFragment StoreEntitySet="Posts">
+          <ScalarProperty Name="postID" ColumnName="postID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMenuItemsDaves">
+      <EntityTypeMapping TypeName="ist420row2Model.tblMenuItemsDave">
+        <MappingFragment StoreEntitySet="tblMenuItemsDave">
+          <ScalarProperty Name="fldPizzaID" ColumnName="fldPizzaID" />
+          <ScalarProperty Name="fldPizzaType" ColumnName="fldPizzaType" />
+          <ScalarProperty Name="fldPizzaCost" ColumnName="fldPizzaCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMenuItemsGABRIELs">
+      <EntityTypeMapping TypeName="ist420row2Model.tblMenuItemsGABRIEL">
+        <MappingFragment StoreEntitySet="tblMenuItemsGABRIEL">
+          <ScalarProperty Name="fldPizzaID" ColumnName="fldPizzaID" />
+          <ScalarProperty Name="fldPizzaType" ColumnName="fldPizzaType" />
+          <ScalarProperty Name="fldPizzaCost" ColumnName="fldPizzaCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMenuItemsJoeys">
+      <EntityTypeMapping TypeName="ist420row2Model.tblMenuItemsJoey">
+        <MappingFragment StoreEntitySet="tblMenuItemsJoey">
+          <ScalarProperty Name="fldPizzaID" ColumnName="fldPizzaID" />
+          <ScalarProperty Name="fldPizzaType" ColumnName="fldPizzaType" />
+          <ScalarProperty Name="fldPizzaCost" ColumnName="fldPizzaCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMenuItemsTims">
+      <EntityTypeMapping TypeName="ist420row2Model.tblMenuItemsTim">
+        <MappingFragment StoreEntitySet="tblMenuItemsTim">
+          <ScalarProperty Name="fldPizzaID" ColumnName="fldPizzaID" />
+          <ScalarProperty Name="fldPizzaType" ColumnName="fldPizzaType" />
+          <ScalarProperty Name="fldPizzaCost" ColumnName="fldPizzaCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ist420row2Model.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ist420row2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="postID" />
+    </Key>
+    <Property Name="postID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="content" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="date" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMenuItemsDave">
+    <Key>
+      <PropertyRef Name="fldPizzaID" />
+    </Key>
+    <Property Name="fldPizzaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fldPizzaType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fldPizzaCost" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMenuItemsGABRIEL">
+    <Key>
+      <PropertyRef Name="fldPizzaID" />
+    </Key>
+    <Property Name="fldPizzaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fldPizzaType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fldPizzaCost" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMenuItemsJoey">
+    <Key>
+      <PropertyRef Name="fldPizzaID" />
+    </Key>
+    <Property Name="fldPizzaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fldPizzaType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fldPizzaCost" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMenuItemsTim">
+    <Key>
+      <PropertyRef Name="fldPizzaID" />
+    </Key>
+    <Property Name="fldPizzaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fldPizzaType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fldPizzaCost" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ist420row2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Posts" EntityType="Self.Post" />
+    <EntitySet Name="tblMenuItemsDaves" EntityType="Self.tblMenuItemsDave" />
+    <EntitySet Name="tblMenuItemsGABRIELs" EntityType="Self.tblMenuItemsGABRIEL" />
+    <EntitySet Name="tblMenuItemsJoeys" EntityType="Self.tblMenuItemsJoey" />
+    <EntitySet Name="tblMenuItemsTims" EntityType="Self.tblMenuItemsTim" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+  </EntityContainer>
+</Schema>
