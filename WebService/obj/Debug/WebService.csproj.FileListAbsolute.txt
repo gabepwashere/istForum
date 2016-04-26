@@ -37,7 +37,6 @@ V:\Desktop\Git\istForum\WebService\bin\Microsoft.AI.ServerTelemetryChannel.xml
 V:\Desktop\Git\istForum\WebService\bin\Microsoft.AI.Web.xml
 V:\Desktop\Git\istForum\WebService\bin\Microsoft.AI.WindowsServer.xml
 V:\Desktop\Git\istForum\WebService\bin\Microsoft.ApplicationInsights.xml
-V:\Desktop\Git\istForum\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
 V:\Desktop\Git\istForum\WebService\obj\Debug\WebService.dll
 V:\Desktop\Git\istForum\WebService\obj\Debug\WebService.pdb
 V:\Desktop\istForum\WebService\bin\EntityFramework.dll

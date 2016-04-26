@@ -322,11 +322,29 @@ Row 2:
             font-family: Calibri;"
             >Webform Containing Fields that can be passed to a database.</section>
 
-            <form data-bind="submit: onSubmit">
-                <p>Username: <input data-bind="value: username" /></p>
-                <p>Password: <input data-bind="value: password" /></p>
-                <p><button type="submit">Submit</button></p>
+            <form data-bind="submit: register">
+                <p>Username: <input data-bind="value: username" /> </p>
+                <p>Password: <input data-bind="value: password" /> </p>
+                <p><button type="submit">Register</button></p>
             </form>
+
+            <form data-bind="submit: update">
+                <p>UserID: <input data-bind="value: userID" /> </p>
+                <p>Username: <input data-bind="value: username1" /> </p>
+                <p>Password: <input data-bind="value: password2" /> </p>
+                <p><button type="submit">Update</button></p>
+            </form>
+
+            <form data-bind="submit: read">
+                <p>UserID: <input data-bind="value: userID1" /> </p>
+                <p><button type="submit">Read</button></p>
+            </form>
+
+            <form data-bind="submit: del ">
+                <p>UserID: <input data-bind="value: userID2" /></p>
+                <p><button type="submit">Delete</button></p>
+            </form>
+
 
             <!--<article>self-contained composition (syndication) in a doc</article>-->
         </div>
@@ -432,7 +450,11 @@ Row 2:
 
                 var viewModel = {
                     username: ko.observable(), password: ko.observable(),
-                    onSubmit: function (formElement) {
+                    username1: ko.observable(), password2: ko.observable(),
+                    userID: ko.observable(), userID1: ko.observable(),
+                    userID2: ko.observable(),
+
+                    register: function (formElement) {
                         //Make sure to change the host and port to match the URL 
                         $.getJSON('http://localhost:55611/Service1.svc/RegisterUser?username=' + viewModel.username() + '&password=' + viewModel.password())
                             .done(function (json) {
@@ -441,7 +463,42 @@ Row 2:
                             .fail(function () {
                                 alert("Error");
                             });
-                    }  //Close the onSubmit binding
+                    },  //Close the register binding
+
+                    
+                    update: function (formElement) {
+                    //Make sure to change the host and port to match the URL 
+                        $.getJSON('http://localhost:55611/Service1.svc/UpdateUserByUserID?userID=' + viewModel.userID() + '&username=' + viewModel.username1() + '&password=' + viewModel.password2())
+                        .done(function (json) {
+                            alert("Done");
+                        })
+                        .fail(function () {
+                            alert("Error");
+                        });
+                    },  //Close the update binding
+
+                    read: function (formElement) {
+                        //Make sure to change the host and port to match the URL 
+                        $.getJSON('http://localhost:55611/Service1.svc/GetUserByUserID?userID=' + viewModel.userID1() )
+                            .done(function (json) {
+                                alert("Done");
+                            })
+                            .fail(function () {
+                                alert("Error");
+                            });
+                    },  //Close the update binding
+
+                    del : function (formElement) {
+                        //Make sure to change the host and port to match the URL 
+                        $.getJSON('http://localhost:55611/Service1.svc/DeleteUserByUserID?userID=' + viewModel.userID2() )
+                            .done(function (json) {
+                                alert("Done");
+                            })
+                            .fail(function () {
+                                alert("Error");
+                            });
+                    }  //Close the update binding
+
                 }; //Close the function MyViewModel code block
                 ko.applyBindings(viewModel);
 
