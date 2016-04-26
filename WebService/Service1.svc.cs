@@ -133,14 +133,14 @@ namespace WebService
             }
         }
 
-        public bool RegisterUser(string username, string password)
+        public Boolean RegisterUser(string username, string password)
         {
             using (ist420row2Entities Entity = new ist420row2Entities())
             {
                 //Insert a Record
                 //Create the menuItem object
                 User user = new User();
-                user.username = username;
+                user.userName = username;
                 user.password = password;
                 //Call the method to add the object to the table
                 Entity.Users.Add(user);
@@ -183,7 +183,7 @@ namespace WebService
                 //Create the student stud object
                 User user = new User();
                 user = Entity.Users.Find(userID);
-                user.username = username;
+                user.userName = username;
                 user.password = password;
                 //Save the changes to the DB
                 Entity.SaveChanges();

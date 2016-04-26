@@ -43,7 +43,7 @@ namespace WebService
         [OperationContract]
         //Added for handling REST post an user
         [WebGet(ResponseFormat = WebMessageFormat.Json,
-           UriTemplate = "/Register?username={username}&password={password}")]
+           UriTemplate = "/RegisterUser?username={username}&password={password}")]
         Boolean RegisterUser(string username,string password);
 
         [OperationContract]

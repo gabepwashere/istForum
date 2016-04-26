@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 IST 420 Team Final Project
 Spring Semester of 2016
 Professor: Joe Oakes 
@@ -19,6 +19,8 @@ Row 2:
 	<!--CDN Content Delivery Network-->
 	 <!--Load the jquery minified version: no comments, no whitespace, streamed-->
     <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>    
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js"></script>
     <!--<script src="scripts/jquery.min.js"></script>-->
     <!--Get Locally from our Server-->
     <!--<script src="scripts/jquery.js"></script>-->
@@ -367,6 +369,13 @@ Row 2:
             style="
             font-family: Calibri;"
             >Webform Containing Fields that can be passed to a database.</section>
+
+            <form data-bind="submit: onSubmit">
+                <p>Username: <input data-bind="value: username" /></p>
+                <p>Password: <input data-bind="value: password" /></p>
+                <p><button type="submit">Submit</button></p>
+            </form>
+
             <!--<article>self-contained composition (syndication) in a doc</article>-->
         </div>
         <!-----------------------------ABOUT AREA----------------------------->
@@ -499,6 +508,20 @@ Row 2:
                     $("#forum, #register,#home,#about,#CodingArea,#GeneralDiscussionArea").hide();
                 });
 
+                var viewModel = {
+                    username: ko.observable(), password: ko.observable(),
+                    onSubmit: function (formElement) {
+                        //Make sure to change the host and port to match the URL 
+                        $.getJSON('http://localhost:55611/Service1.svc/RegisterUser?username=' + viewModel.username() + '&password=' + viewModel.password())
+                            .done(function (json) {
+                                alert("Done");
+                            })
+                            .fail(function () {
+                                alert("Error");
+                            });
+                    }  //Close the onSubmit binding
+                }; //Close the function MyViewModel code block
+                ko.applyBindings(viewModel);
 
                 //Load the Online Users with the JSON data
                 for (var i in users){
@@ -527,7 +550,7 @@ Row 2:
                         + "UserName: " + users[i].userName
                         + "<br>");
                  }
-             	});
+        });
         </script>
 </body>
 </html>
