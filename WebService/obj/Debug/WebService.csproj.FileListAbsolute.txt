@@ -40,3 +40,7 @@ V:\Desktop\Git\istForum\WebService\bin\Microsoft.ApplicationInsights.xml
 V:\Desktop\Git\istForum\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
 V:\Desktop\Git\istForum\WebService\obj\Debug\WebService.dll
 V:\Desktop\Git\istForum\WebService\obj\Debug\WebService.pdb
+V:\Desktop\istForum\WebService\bin\EntityFramework.dll
+V:\Desktop\istForum\WebService\bin\EntityFramework.SqlServer.dll
+V:\Desktop\istForum\WebService\bin\EntityFramework.xml
+V:\Desktop\istForum\WebService\bin\EntityFramework.SqlServer.xml

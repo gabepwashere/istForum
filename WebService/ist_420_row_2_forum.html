@@ -45,7 +45,8 @@ Row 2:
 	
 	<!-----------------------------CSS STYLE RULES AREA------------------>
 
-    <!--This is an internal/embedded style sheet rule -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--This is an internal/embedded style sheet rule -->
     <style type="text/css">
         /*HTML Style Rule*/
 		h1 {
@@ -57,7 +58,7 @@ Row 2:
             /*text-align: center;*/
         }
 		nav {
-		width: 1024px; /*Limits the page size to 1024px width*/
+		
 		height: 40px;
 		font-size: x-large;
 		font-family:  Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -94,8 +95,6 @@ Row 2:
 		footer a {
 			text-decoration: none; /*removes underline*/
 		}
-		}
-	
     </style>
 </head>
 <body>
@@ -103,7 +102,7 @@ Row 2:
     <header>
     
     <!--Logo-->
-     	<div 
+     	<div
      	style="
      	float:left;
      	width:80px;
@@ -111,68 +110,59 @@ Row 2:
 			<img src="psulogo.jpg" alt="PSU IST Logo" width="100px" height="79px">
 		</div>
 	<!--Header-->	
-		<div style="
-				width: 1024px;
+		<nav class="navbar-fixed"
+			  style="
 				background-color:#181830;
 				text-align: center; 
 				font-size: 200%;
 				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 				color: white;"> 
 			IST 420 Forum
-		</div>
+		</nav>
 	<!-----------------------------NAVIGATION DIV----------------------->
 	
-	<nav class="Page-Selector">
-		<div>
-	         <ul>
-	            <li><a href="#home" id="navHome" class="links" rel="home">Home</a></li>
-	            <li><a href="#forum" id="navForum" class="links" rel="forum">Forum</a></li>
-	            <li><a href="#register" id="navRegister" class="links" rel="register">Register</a></li>
-	            <li><a href="#about" id="navAbout" class="links" rel="about">About</a></li>
-	         </ul>
-	    </div>
-    </nav>
-</header>
-        <!-----------------------------HOME AREA----------------------------->
-        <div id="home" style="display:block">
-            <h1>Home</h1>
-            <aside id="whoisonline1" 
-            style=
-           		"line-height:30px;
-                color: white;
-           		background-color:#181830;
-            	height:500px;
-           		width:150px;
-            	float:left;
-            	font-family: Calibri;
-            	padding:5px;"> Online Users </aside>
-            <section class="margin-left:165px"></section>
-            <!--<article>self-contained composition (syndication) in a doc</article>-->
-            <div id="lastactivity"
-            style="
-            width: 800px;
-            float:left;
-            font-size:large;
-            font-family: Calibri;
-            ">
-            Hello, Welcome to the Penn State Abington IST Forums brought to you by IST 420 Row 2.
-                <img src="team.jpg" alt="Row2 Team Photo" width="300px" height="275px" position="relative"  > 
-		</div>
-        </div>
-        <!-----------------------------FORUM AREA----------------------------->
-        <div id="forum" 
-        style="display:none">
-        <h1>Forum</h1>
-            <aside id="whoisonline2" 
-            	style="line-height:30px;
+        <nav class="Page-Selector navbar-fixed">
+            <div>
+                <ul>
+                    <li><a href="#home" id="navHome" class="links" rel="home">Home</a></li>
+                    <li><a href="#forum" id="navForum" class="links" rel="forum">Forum</a></li>
+                    <li><a href="#register" id="navRegister" class="links" rel="register">Register</a></li>
+                    <li><a href="#about" id="navAbout" class="links" rel="about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!---------------------------- Sidebar Who's Online------------------------------->
+    <aside id="whoisonline"
+           style="line-height:30px;
                 color: white;
             	background-color:#181830;
             	height:500px;
             	width:150px;
             	float:left;
             	padding:5px;
-            	font-family: Calibri;">	
-            Online Users </aside>
+            	font-family: Calibri;">
+            <h3 style="font-family: Impact;">Online Users</h3>
+    </aside>
+        <!-----------------------------HOME AREA----------------------------->
+        <div id="home" style="display:block">
+            <h1>Home</h1>
+            <section class="margin-left:165px"></section>
+            <!--<article>self-contained composition (syndication) in a doc</article>-->
+            <div id="lastactivity"
+                 style="
+                 width: 800px;
+                 float:left;
+                 font-size:large;
+                 font-family: Calibri;">
+            Hello! Welcome to the Penn State Abington IST Forums brought to you by IST 420 Row 2.
+                <img src="team.jpg" alt="Row2 Team Photo" width="300px" height="275px" position="relative"  > 
+		    </div>
+        </div>
+        <!-----------------------------FORUM AREA----------------------------->
+        <div id="forum" 
+        style="display:none">
+        <h1>Forum</h1>
             <div id="istforums" 
             	style="
             	border-style: solid; 
@@ -223,17 +213,7 @@ Row 2:
         <div id="GeneralDiscussionArea" 
         style="display:none">
             <h1>General Discussion Sub-Forum</h1>
-            <aside id="whoisonline2" 
-            	style="line-height:30px;
-                color: white;
-            	background-color:#181830;
-            	height:500px;
-            	width:150px;
-            	float:left;
-            	padding:5px;
-            	font-family: Calibri;">
-            Online Users </aside>
-            <div id="GeneralDiscussion" 
+              <div id="GeneralDiscussion" 
             	style="
             	border-style: solid; 
             	border-color:black; 
@@ -270,16 +250,6 @@ Row 2:
         <div id="CodingArea" 
         style="display:none">
             <h1>Coding Sub-Forum</h1>
-            <aside id="whoisonline2" 
-            	style="line-height:30px;
-                color: white;
-            	background-color:#181830;
-            	height:500px;
-            	width:150px;
-            	float:left;
-            	padding:5px;
-            	font-family: Calibri;">
-            Online Users </aside>
             <div 
             	style="
             	border-style: solid; 
@@ -312,15 +282,6 @@ Row 2:
         <div id="NetworkingArea" 
         style="display:none">
             <h1>Networking Sub-Forum</h1>
-            <aside id="whoisonline2" 
-            	style="line-height:30px;
-            	background-color:#181830;
-                color: white;
-            	height:500px;
-            	width:150px;
-            	float:left;
-            	padding:5px;">
-            Online Users </aside>
             <div 
             	style="
             	border-style: solid; 
@@ -356,17 +317,6 @@ Row 2:
         <!-----------------------------REGISTER AREA---------------------------->
         <div id="register" style="display:none">
             <h1>Register</h1>
-            <aside id="whoisonline3" 
-            style="
-            line-height:30px;
-            background-color:#181830;
-            color: white;
-            height:500px;
-            width:150px;
-            float:left;
-            padding:5px;
-            font-family: Calibri;
-            ">Online Users </aside>
             <section 
             style="
             font-family: Calibri;"
@@ -383,16 +333,6 @@ Row 2:
         <!-----------------------------ABOUT AREA----------------------------->
         <div id="about" style="display:none">
             <h1>About Us</h1>
-            <aside id="whoisonline4" style="
-            line-height:30px;
-            background-color:#181830;
-            color: white;
-            height:500px;
-            width:150px;
-            float:left;
-            padding:5px;
-            font-family: Calibri;
-            ">Online Users </aside>
             <div 
             style="
             line-height:30px;
@@ -412,16 +352,6 @@ Row 2:
         <!-----------------------------General Discussion----------------------------->
         <div id="generaldiscussion" style="display:none">
             <h1>General Discussion</h1>
-            <aside id="whoisonline4" style="
-            line-height:30px;
-            color: white;
-            background-color:#181830;
-            height:500px;
-            width:500px;
-            float:left;
-            padding:5px;
-            font-family: Calibri;
-            ">Online Users </aside>
         	<p>TEST TEST TEST TEST TEST TEST TEST</p>
         </div>
         <!-----------------------------FOOTER AREA---------------------------->
@@ -444,16 +374,6 @@ Row 2:
         <!-----------------------------EXAMPLE POST AREA---------------------------->
         <div id="post" style="display:none">
             <h1>Post</h1>
-            <aside id="whoisonline5" 
-            style=
-           		"line-height:30px;
-           		background-color:#181830;
-                color: white;
-            	height:500px;
-           		width:150px;
-            	float:left;
-            	font-family: Calibri;
-            	padding:5px;"> Online Users </aside>
             <section class="margin-left:165px"></section>
             <!--<article>self-contained composition (syndication) in a doc</article>-->
             <div id="lastactivity"
@@ -527,28 +447,8 @@ Row 2:
 
                 //Load the Online Users with the JSON data
                 for (var i in users){
-                	//Adds Online Users to Sidebar in Home
-                    $("#whoisonline1").append("<br>"
-                        + "ID: " + users[i].userID
-                        + "<br>"
-                        + "UserName: " + users[i].userName
-                        + "<br>");
-                    //Adds Online Users to Sidebar in Forum
-                    $("#whoisonline2").append("<br>"
-                        + "ID: " + users[i].userID
-                        + "<br>"
-                        + "UserName: " + users[i].userName
-                        + "<br>");
-                    //Adds Online Users to Sidebar in Register
-					$("#whoisonline3").append("<br>"
-                        + "ID: " + users[i].userID
-                        + "<br>"
-                        + "UserName: " + users[i].userName
-                        + "<br>");
-                    //Adds Online Users to Sidebar in About
-					$("#whoisonline4").append("<br>"
-                        + "ID: " + users[i].userID
-                        + "<br>"
+                //Adds Online Users to Sidebar
+                    $("#whoisonline").append("<br>"
                         + "UserName: " + users[i].userName
                         + "<br>");
                  }
