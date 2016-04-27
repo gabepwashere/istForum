@@ -107,6 +107,7 @@
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Service1.svc" />
+    <Content Include="team.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
