@@ -318,21 +318,16 @@ Row 2:
         </div>
         <!-----------------------------REGISTER AREA---------------------------->
         <div id="register" style="display:none">
-            <h1>Register</h1>
-            <section 
-            style="
-            font-family: Calibri;"
-            >Webform Containing Fields that can be passed to a database.</section>
 
             <form data-bind="submit: register">
-                <h1>Register</h1>
+                <h3>Register</h3>
                 <p>Username: <input data-bind="value: username" /> </p>
                 <p>Password: <input data-bind="value: password" /> </p>
                 <p><button type="submit">Register</button></p>
             </form>
 
             <form data-bind="submit: update">
-                <h1>Update</h1>
+                <h3>Update</h3>
                 <p>UserID: <input data-bind="value: userID" /> </p>
                 <p>Username: <input data-bind="value: username1" /> </p>
                 <p>Password: <input data-bind="value: password2" /> </p>
@@ -340,13 +335,13 @@ Row 2:
             </form>
 
             <form data-bind="submit: read">
-                <h1>Read User</h1>
+                <h3>Read User</h3>
                 <p>UserID: <input data-bind="value: userID1" /> </p>
                 <p><button type="submit">Read</button></p>
             </form>
 
-            <form data-bind="submit: del ">
-                <h1>Delete</h1>
+            <form style="padding='7px'" data-bind="submit: del ">
+                <h3>Delete</h3>
                 <p>UserID: <input data-bind="value: userID2" /></p>
                 <p><button type="submit">Delete</button></p>
             </form>
