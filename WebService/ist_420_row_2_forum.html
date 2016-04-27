@@ -143,7 +143,7 @@ Row 2:
            style="line-height:30px;
                 color: white;
             	background-color:#181830;
-            	height:500px;
+            	height:1000px;
             	width:150px;
             	float:left;
             	padding:5px;
@@ -323,33 +323,48 @@ Row 2:
         <!-----------------------------REGISTER AREA---------------------------->
         <div id="register" style="display:none">
 
-            <form data-bind="submit: register">
-                <h3>Register</h3>
-                <p>Username: <input data-bind="value: username" /> </p>
-                <p>Password: <input data-bind="value: password" /> </p>
-                <p><button type="submit">Register</button></p>
-            </form>
+            <div style="width:500px; margin:10px; border-style: solid; 
+            	border-color:black; padding:10px 10px 10px 10px">
 
-            <form data-bind="submit: update">
-                <h3>Update</h3>
-                <p>UserID: <input data-bind="value: userID" /> </p>
-                <p>Username: <input data-bind="value: username1" /> </p>
-                <p>Password: <input data-bind="value: password2" /> </p>
-                <p><button type="submit">Update</button></p>
-            </form>
+                <form data-bind="submit: register">
+                    <h3>Register</h3>
+                    <p>Username: <input data-bind="value: username" /> </p>
+                    <p>Password: <input data-bind="value: password" /> </p>
+                    <p><button type="submit">Register</button></p>
+                </form>
+            </div>
 
-            <form data-bind="submit: read">
-                <h3>Read User</h3>
-                <p>UserID: <input data-bind="value: userID1" /> </p>
-                <p><button type="submit">Read</button></p>
-            </form>
+            <div style="width:500px; margin:10px; border-style: solid; 
+            	border-color:black; padding:10px 10px 10px 10px">
 
-            <form style="padding='7px'" data-bind="submit: del ">
-                <h3>Delete</h3>
-                <p>UserID: <input data-bind="value: userID2" /></p>
-                <p><button type="submit">Delete</button></p>
-            </form>
+                <form data-bind="submit: update">
+                    <h3>Update</h3>
+                    <p>UserID: <input data-bind="value: userID" /> </p>
+                    <p>Username: <input data-bind="value: username1" /> </p>
+                    <p>Password: <input data-bind="value: password2" /> </p>
+                    <p><button type="submit">Update</button></p>
+                </form>
+            </div>
 
+            <div style ="width:500px; margin:10px; border-style: solid; 
+            	border-color:black; padding:10px 10px 10px 10px">
+
+                <form data-bind="submit: read">
+                    <h3>Read User</h3>
+                    <p>UserID: <input data-bind="value: userID1" /> </p>
+                    <p><button type="submit">Read</button></p>
+                </form>
+            </div>
+
+            <div style="width:500px; margin:10px; border-style: solid; 
+            	border-color:black; padding:10px 10px 10px 10px">
+
+                <form data-bind="submit: del ">
+                    <h3>Delete</h3>
+                    <p>UserID: <input data-bind="value: userID2" /></p>
+                    <p><button type="submit">Delete</button></p>
+                </form>
+            </div>
 
             <!--<article>self-contained composition (syndication) in a doc</article>-->
         </div>

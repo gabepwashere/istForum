@@ -66,3 +66,26 @@ C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.ApplicationInsights
 C:\Users\Jaein Lee\Desktop\istForum\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
 C:\Users\Jaein Lee\Desktop\istForum\WebService\obj\Debug\WebService.dll
 C:\Users\Jaein Lee\Desktop\istForum\WebService\obj\Debug\WebService.pdb
+V:\Desktop\database\istForum\WebService\bin\ApplicationInsights.config
+V:\Desktop\database\istForum\WebService\bin\WebService.dll.config
+V:\Desktop\database\istForum\WebService\bin\WebService.dll
+V:\Desktop\database\istForum\WebService\bin\WebService.pdb
+V:\Desktop\database\istForum\WebService\bin\EntityFramework.dll
+V:\Desktop\database\istForum\WebService\bin\EntityFramework.SqlServer.dll
+V:\Desktop\database\istForum\WebService\bin\Microsoft.AI.Agent.Intercept.dll
+V:\Desktop\database\istForum\WebService\bin\Microsoft.AI.DependencyCollector.dll
+V:\Desktop\database\istForum\WebService\bin\Microsoft.AI.PerfCounterCollector.dll
+V:\Desktop\database\istForum\WebService\bin\Microsoft.AI.ServerTelemetryChannel.dll
+V:\Desktop\database\istForum\WebService\bin\Microsoft.AI.Web.dll
+V:\Desktop\database\istForum\WebService\bin\Microsoft.AI.WindowsServer.dll
+V:\Desktop\database\istForum\WebService\bin\Microsoft.ApplicationInsights.dll
+V:\Desktop\database\istForum\WebService\bin\EntityFramework.xml
+V:\Desktop\database\istForum\WebService\bin\EntityFramework.SqlServer.xml
+V:\Desktop\database\istForum\WebService\bin\Microsoft.AI.DependencyCollector.xml
+V:\Desktop\database\istForum\WebService\bin\Microsoft.AI.ServerTelemetryChannel.xml
+V:\Desktop\database\istForum\WebService\bin\Microsoft.AI.Web.xml
+V:\Desktop\database\istForum\WebService\bin\Microsoft.AI.WindowsServer.xml
+V:\Desktop\database\istForum\WebService\bin\Microsoft.ApplicationInsights.xml
+V:\Desktop\database\istForum\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
+V:\Desktop\database\istForum\WebService\obj\Debug\WebService.dll
+V:\Desktop\database\istForum\WebService\obj\Debug\WebService.pdb
