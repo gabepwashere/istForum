@@ -227,10 +227,13 @@ Row 2:
             	padding: 10px 10px 10px 10px; 
             	margin-left: 165px; 
             	width: 835px;
-            	font-family: Calibri;">
+            	font-family: Calibri;
+                height: 750px ">
+
             	<div style="float:left; font-size: large;"></div>
 
-
+                </div>
+        </div>
         <!-----------------------------Coding Area----------------------------------------->
         <div class= "container" id="CodingArea" 
         style="display:none">
@@ -506,7 +509,8 @@ Row 2:
                         //Make sure to change the host and port to match the URL 
                         $.getJSON('http://localhost:55611/Service1.svc/GetUserByUserID?userID=' + viewModel.userID1() )
                             .done(function (json) {
-                                alert("Done");
+                                alert("User ID: " + viewModel.userID1() + " has a username of " + json.userName + " and a password of "
+                                    + json.password);
                                 $.getJSON('http://localhost:55611/Service1.svc/GetAllUsers')
                                 .done(function (json) {
                                     $("#whoisonline").html("Online Users");

@@ -43,29 +43,6 @@ V:\Desktop\istForum\WebService\bin\EntityFramework.dll
 V:\Desktop\istForum\WebService\bin\EntityFramework.SqlServer.dll
 V:\Desktop\istForum\WebService\bin\EntityFramework.xml
 V:\Desktop\istForum\WebService\bin\EntityFramework.SqlServer.xml
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\ApplicationInsights.config
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\WebService.dll.config
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\WebService.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\WebService.pdb
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\EntityFramework.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\EntityFramework.SqlServer.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.Web.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\EntityFramework.xml
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\EntityFramework.SqlServer.xml
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.Web.xml
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.ApplicationInsights.xml
-C:\Users\Jaein Lee\Desktop\istForum\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
-C:\Users\Jaein Lee\Desktop\istForum\WebService\obj\Debug\WebService.dll
-C:\Users\Jaein Lee\Desktop\istForum\WebService\obj\Debug\WebService.pdb
 V:\Desktop\database\istForum\WebService\bin\ApplicationInsights.config
 V:\Desktop\database\istForum\WebService\bin\WebService.dll.config
 V:\Desktop\database\istForum\WebService\bin\WebService.dll
@@ -89,3 +66,25 @@ V:\Desktop\database\istForum\WebService\bin\Microsoft.ApplicationInsights.xml
 V:\Desktop\database\istForum\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
 V:\Desktop\database\istForum\WebService\obj\Debug\WebService.dll
 V:\Desktop\database\istForum\WebService\obj\Debug\WebService.pdb
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\ApplicationInsights.config
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\WebService.dll.config
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\WebService.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\WebService.pdb
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\EntityFramework.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\EntityFramework.SqlServer.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.Web.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\EntityFramework.xml
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\EntityFramework.SqlServer.xml
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.Web.xml
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Jaein Lee\Desktop\istForum\WebService\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Jaein Lee\Desktop\istForum\WebService\obj\Debug\WebService.dll
+C:\Users\Jaein Lee\Desktop\istForum\WebService\obj\Debug\WebService.pdb

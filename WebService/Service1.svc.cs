@@ -18,17 +18,12 @@ namespace WebService
         {
             using (ist420row2Entities Entity = new ist420row2Entities())
             {
-                //Insert a Record
-                //Create the menuItem object
                 Post post = new Post();
                 post.username = username;
                 post.content = content;
                 post.date = date;
-                //Call the method to add the object to the table
                 Entity.Posts.Add(post);
-                //Save the changes to the DB
                 Entity.SaveChanges();
-                //user.userID will contain the record number
                 if (post.postID > 0)
                     return true;
                 else
@@ -45,7 +40,6 @@ namespace WebService
                 try
                 {
                     post = Entity.Posts.Find(postID);
-                    //Delete a record
                     Entity.Posts.Remove(post);
                     Entity.SaveChanges();
                     return true;
@@ -65,7 +59,6 @@ namespace WebService
                 try
                 {
                     user = Entity.Users.Find(userID);
-                    //Delete a record
                     Entity.Users.Remove(user);
                     Entity.SaveChanges();
                     return true;
@@ -81,8 +74,6 @@ namespace WebService
         {
             using (ist420row2Entities Entity = new ist420row2Entities())
             {
-                //Read a Record
-                //Create the student stud object
                 var posts = from Post in Entity.Posts select Post;
                 return posts.ToArray();
             }
@@ -93,8 +84,6 @@ namespace WebService
         {
             using (ist420row2Entities Entity = new ist420row2Entities())
             {
-                //Read a Record
-                //Create the student stud object
                 var users = from User in Entity.Users select User;
                 return users.ToArray();
             }
@@ -137,16 +126,11 @@ namespace WebService
         {
             using (ist420row2Entities Entity = new ist420row2Entities())
             {
-                //Insert a Record
-                //Create the menuItem object
                 User user = new User();
                 user.userName = username;
                 user.password = password;
-                //Call the method to add the object to the table
                 Entity.Users.Add(user);
-                //Save the changes to the DB
                 Entity.SaveChanges();
-                //user.userID will contain the record number
                 if (user.userID > 0)
                     return true;
                 else
@@ -158,16 +142,12 @@ namespace WebService
         {
             using (ist420row2Entities Entity = new ist420row2Entities())
             {
-                //Update a Record
-                //Create the student stud object
                 Post post = new Post();
                 post= Entity.Posts.Find(postID);
                 post.username = username;
                 post.content= content;
                 post.date = date;
-                //Save the changes to the DB
                 Entity.SaveChanges();
-                //stud.fldStudentID will contain the record number
                 if (post.postID > 0)
                     return true;
                 else
@@ -179,15 +159,11 @@ namespace WebService
         {
             using(ist420row2Entities Entity = new ist420row2Entities())
             {
-                //Update a Record
-                //Create the student stud object
                 User user = new User();
                 user = Entity.Users.Find(userID);
                 user.userName = username;
                 user.password = password;
-                //Save the changes to the DB
                 Entity.SaveChanges();
-                //stud.fldStudentID will contain the record number
                 if (user.userID > 0)
                     return true;
                 else
