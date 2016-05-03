@@ -163,6 +163,8 @@ Row 2:
                  font-family: Calibri;">
             Hello! Welcome to the Penn State Abington IST Forums brought to you by IST 420 Row 2.
                 <img src="team.jpg" alt="Row2 Team Photo" width="500px" height="375px" position="relative" class="auto-style1"  > 
+
+
 		    </div>
         </div>
         <!-----------------------------FORUM AREA----------------------------->
@@ -183,6 +185,8 @@ Row 2:
 				<br>	
 				<p><a href="#NetworkingArea" id="Networking2" class="links" rel="networking">Networking</a></p>
 				<br>
+
+                
 
             </div>
         </div>
@@ -480,8 +484,27 @@ Row 2:
                 </form>
             </div>
 
-            <!--<article>self-contained composition (syndication) in a doc</article>-->
-        </div>
+            <div style="width:500px; margin:10px; border-style: solid;
+            	border-color:black; padding:10px 10px 10px 10px">
+                <form data-bind="submit: createPost">
+                    <h3>Create a Post</h3>
+                    <p>User Name: <input data-bind="value: postUserName" /> </p>
+                    <p>Content: <input data-bind="value: content" /> </p>
+                    <p>Date: <input data-bind="value: date" /> </p>
+                    <p><button type="submit">Create Post</button></p>
+                </form>
+
+                </div>
+                <div style="width:500px; margin:10px; border-style: solid;
+            	border-color:black; padding:10px 10px 10px 10px">
+                    <form data-bind="submit: readPost">
+                        <h3>Read Post</h3>
+                        <p>PostID: <input data-bind="value: postID" /> </p>
+                        <p><button type="submit">Read</button></p>
+                    </form>
+                </div>
+                    <!--<article>self-contained composition (syndication) in a doc</article>-->
+                </div>
         <!-----------------------------ABOUT AREA----------------------------->
         <div class="container text-center" id="about" style="display:none">
             <h1>About Us</h1>
@@ -588,6 +611,8 @@ Row 2:
                     username1: ko.observable(), password2: ko.observable(),
                     userID: ko.observable(), userID1: ko.observable(),
                     userID2: ko.observable(), 
+                    postUserName: ko.observable(), content: ko.observable(),
+                    date: ko.observable(), postID: ko.observable(),
 
                     register: function (formElement) {
                         //Make sure to change the host and port to match the URL 
@@ -676,7 +701,31 @@ Row 2:
                             .fail(function () {
                                 alert("Error");
                             });
-                    }  //Close the update binding
+                    },  //Close the update binding
+
+                    createPost: function (formElement) {
+                        //Make sure to change the host and port to match the URL 
+                        $.getJSON('http://localhost:55611/Service1.svc/CreatePost?username=' + viewModel.postUserName() +
+                            '&content=' + viewModel.content() + '&date=' + viewModel.date())
+                            .done(function (json) {
+                                alert("Done");
+                            })
+                            .fail(function () {
+                                alert("Error");
+                            });
+                    },  //Close the update binding
+
+                    readPost : function (formElement) {
+                        //Make sure to change the host and port to match the URL 
+                        $.getJSON( 'http://localhost:55611/Service1.svc/GetPostByPostID?postID=' + viewModel.postID() )
+                        .done(function (json) {
+                            alert("Post ID: " + viewModel.postID() + " has a username of " + json.username + ", a content of "
+                                   + json.content + " and a post date of " + json.date);
+                        })
+                        .fail(function () {
+                            alert("Error");
+                        });
+                }  //Close the update binding
 
                 }; //Close the function MyViewModel code block
                 ko.applyBindings(viewModel);
